@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Arena Jokenpô</title>
+</head>
+
+<body>
+    
+    <main>
+        <div class="fundo-h1">
+            <h1>É hora do Duelo! Jokenpô</h1>
+        </div>
+
+        <div class="buttons">
+            <button onclick="playHuman('rock')" class="button-1" id="rock"><img src="./assets/mão-pedra.png"
+                    alt="mão-pedra" style="width: 100px; height: 100px;"></button>
+            <button onclick="playHuman('paper')" class="button-2" id="paper"><img src="./assets/mão-papel.png"
+                    alt="mão-papel" style="width: 100px; height: 100px;"></button>
+            <button onclick="playHuman('scissors')" class="button-3" id="scissors"><img src="./assets/mão-tesoura.png"
+                    alt="mão-tesoura" style="width: 100px; height: 100px;"></button>
+        </div>
+
+        <div class="box-text" id="box-points">
+            <img src="./assets/empate-gif.gif" alt="imagem-espadas" id="empate-img">
+            <img src="./assets/ganhou.gif" alt="imagem-trofeú" id="you-win">
+            <img src="./assets/goku-dancing.gif" alt="goku-gif" id="goku-win">
+            <p class="result"></p>
+            <p class="your-points">Sua Pontuação: <span id="human-score">0</span></p>
+            <p class="goku-points">Pontuação do Goku: <span id="machine-score">0</span></p>
+        </div>
+        <button onclick="newGame()" id="reset-game">Nova Partida</button>
+    </main>
+
+</body>
+<script src="./scripts.js"></script>
+
+</html>

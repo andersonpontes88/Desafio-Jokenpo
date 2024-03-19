@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-family: "Chakra Petch", sans-serif;
+    outline: none;
+}
+
+html {
+    min-height: 100%;
+    background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/Screenshot23-1920x1080-2ae06b7df479f3dba75b3f545b4a41c5.jpg?resize=1&w=1920);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+
+.box-text,
+.fundo-h1 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 30%;
+    border: 2px solid rgb(255, 0, 255);
+    padding: 30px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#box-points {
+    line-height: 50px;
+}
+
+.your-points,
+.goku-points {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    text-shadow: 1px 3px 3px #9100d0;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 50px;
+}
+
+button {
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    width: 105px;
+    height: 120px;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+#reset-game {
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid rgb(255, 0, 255);
+    transition: all 0.3s ease-in-out;
+}
+
+#reset-game:hover {
+    background-color: #31f804;
+}
+
+#rock {
+    background-color: #06f5f9;
+}
+
+#scissors {
+    background-color: #c900b2;
+}
+
+#paper {
+    background-color: #cbf303;
+}
+
+.your-points span {
+    color: #1515f0;
+}
+
+.goku-points span {
+    color: #9100d0;
+}
+
+.result {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#empate-img,
+#you-win {
+    display: none;
+    width: 100px;
+    height: 100px;
+}
+
+#goku-win {
+    display: none;
+    width: 120px;
+    height: 150px;
+}
