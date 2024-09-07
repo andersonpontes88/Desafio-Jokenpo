@@ -24,16 +24,6 @@ main {
     gap: 30px;
 }
 
-/* .players {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    gap: 10px;
-} */
-
-
 .box-text,
 .fundo-h1 {
     background-color: #ffffff;
@@ -60,7 +50,6 @@ h1 {
     font-weight: 700;
     font-size: 45px;
     text-shadow: 1px 3px 3px #9100d0;
-
 }
 
 .buttons {
@@ -68,16 +57,11 @@ h1 {
     gap: 50px;
 }
 
- button .img-papel .img-pedra .img-tesoura {
-    height: 100px;
-    width: 100px;
-}
-
 button {
     border-radius: 10px;
     cursor: pointer;
     border: none;
-    width: 105px;
+    width: 100px;
     height: 120px;
     transition: all 0.5s ease-in-out;
 }
@@ -175,7 +159,5 @@ button:hover {
 
     .buttons button {
         border-radius: 10px;
-        width: 90px;
-        height: 110px;
     }
 }
