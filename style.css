@@ -24,14 +24,14 @@ main {
     gap: 30px;
 }
 
-.players {
+/* .players {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     gap: 10px;
-}
+} */
 
 
 .box-text,
@@ -68,6 +68,11 @@ h1 {
     gap: 50px;
 }
 
+ button .img-papel .img-pedra .img-tesoura {
+    height: 100px;
+    width: 100px;
+}
+
 button {
     border-radius: 10px;
     cursor: pointer;
@@ -86,7 +91,7 @@ button:hover {
 #reset-game {
     width: 200px;
     height: 70px;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     border: 2px solid rgb(255, 0, 255);
     transition: all 0.3s ease-in-out;
@@ -132,4 +137,45 @@ button:hover {
     display: none;
     width: 120px;
     height: 150px;
+}
+
+
+@media screen and (max-width: 700px){
+    .fundo-h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10%;
+    }
+
+    .box-text {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        gap: 15px;
+        padding: 10px;
+    }
+    .fundo-h1 h1 {
+        font-size: 18px;
+    }
+    .box-text p {
+        font-size: 15px;
+    }
+
+    #reset-game {
+        font-size: 25px;
+        max-width: 100%;
+        height: 60px;
+        margin-top: 10%;
+    }
+
+    .buttons {
+        gap: 25px;
+    }
+
+    .buttons button {
+        border-radius: 10px;
+        width: 90px;
+        height: 110px;
+    }
 }
